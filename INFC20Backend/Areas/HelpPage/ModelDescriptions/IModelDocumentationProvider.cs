@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace INFC20Backend.Areas.HelpPage.ModelDescriptions
+namespace infc20.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

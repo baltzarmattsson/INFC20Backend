@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace INFC20Backend
+namespace infc20
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

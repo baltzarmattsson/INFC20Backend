@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using INFC20Backend.Areas.HelpPage.ModelDescriptions;
-using INFC20Backend.Areas.HelpPage.Models;
+using infc20.Areas.HelpPage.ModelDescriptions;
+using infc20.Areas.HelpPage.Models;
 
-namespace INFC20Backend.Areas.HelpPage.Controllers
+namespace infc20.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

@@ -1,5 +1,5 @@
-﻿using INFC20Backend.DataAccessLayer;
-using INFC20Backend.Models;
+﻿using infc20.DataAccessLayer;
+using infc20.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +7,12 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace INFC20Backend.Controllers
+namespace infc20.Controllers
 {
     public class UserInfoController : ApiController
     {
 
-        private UserInfoDAL userInfoDal = new UserInfoDAL(); 
+        private UserDAL userInfoDal = new UserDAL(); 
 
         // GET: api/UserInfo
         public IEnumerable<string> Get()
@@ -23,9 +23,10 @@ namespace INFC20Backend.Controllers
         // GET: api/UserInfo/5
         [HttpGet]
         [Route("api/UserInfo/Get/{email}")]
-        public UserInfo Get(string email)
+        public User Get(string email)
         {
-            return this.userInfoDal.GetUser(email);
+            return null;
+            //return this.userInfoDal.GetUser(email);
         }
 
         // POST: api/UserInfo

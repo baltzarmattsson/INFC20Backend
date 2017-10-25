@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace INFC20Backend.Areas.HelpPage
+namespace infc20.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

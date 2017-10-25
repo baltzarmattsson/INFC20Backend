@@ -1,29 +1,40 @@
-﻿using INFC20Backend.Models;
+﻿using infc20.Model;
+using infc20.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace INFC20Backend.DataAccessLayer
+namespace infc20.DataAccessLayer
 {
-    public class BidDAL
+    class BidDAL
     {
+        private static readonly Type type = new Bid().GetType();
+        private static Dictionary<string, object> parameters;
+        private static string procedure;
+        private static string[] exceptionParams = new string[] { "TimeStamp" };
 
-        public Bid GetBid(string email, int listingId, double amount)
+        public static void AddBid(Bid bid)
         {
-            // connect to connector
-            // call stored procedure
-            // get object
-            // return object
+            procedure = BidProcedure.ADD_BID.ToString();
+            Utils.InsertEntity(bid, procedure, exceptionParams); 
+        }
 
-            if (email == "1")
-            {
-                return new Bid() { Email = "temp1", Amount = 1.0, ListingId = 1337, TimeStamp = DateTime.Now };
-            }
-            else
-            {
-                return new Bid() { Email = "temp222222", Amount = 1514124.0, ListingId = 1124123433, TimeStamp = DateTime.Now };
-            }
+        public static void AddBid(User user, Listing listing, double amount)
+        {
+            if (user != null && listing != null)
+                AddBid(new Bid(user.Email, listing.Id, amount));
+        }
+    
+        public static List<object> GetBidsForListing(int listingId)
+        {
+            procedure = BidProcedure.GET_BIDS_FOR_LISTING.ToString();
+
+            parameters = new Dictionary<string, object>();
+            parameters.Add("ListingId", listingId);
+
+            return Utils.Get(type, procedure, parameters);
         }
     }
 }

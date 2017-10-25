@@ -1,6 +1,6 @@
 using System;
 
-namespace INFC20Backend.Areas.HelpPage.ModelDescriptions
+namespace infc20.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

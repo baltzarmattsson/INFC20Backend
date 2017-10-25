@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using INFC20Backend.Areas.HelpPage.ModelDescriptions;
+using infc20.Areas.HelpPage.ModelDescriptions;
 
-namespace INFC20Backend.Areas.HelpPage.Models
+namespace infc20.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

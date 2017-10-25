@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace INFC20Backend
+namespace infc20
 {
     public class FilterConfig
     {

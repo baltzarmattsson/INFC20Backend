@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace INFC20Backend
+namespace infc20
 {
     public static class WebApiConfig
     {

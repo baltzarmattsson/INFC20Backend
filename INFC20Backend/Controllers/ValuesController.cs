@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace INFC20Backend.Controllers
+namespace infc20.Controllers
 {
     public class ValuesController : ApiController
     {

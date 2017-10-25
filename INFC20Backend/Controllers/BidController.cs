@@ -1,5 +1,5 @@
-﻿using INFC20Backend.DataAccessLayer;
-using INFC20Backend.Models;
+﻿using infc20.DataAccessLayer;
+using infc20.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace INFC20Backend.Controllers
+namespace infc20.Controllers
 {
     public class BidController : ApiController
     {
@@ -500,8 +500,8 @@ namespace INFC20Backend.Controllers
         [Route("api/Bid/{email}/{listingId}/{amount}")]
         public Bid Get(string email, int listingId, double amount)
         {
-            return this.bidDal.GetBid(email, listingId, amount);
-            //return "value";
+            //return this.bidDal.GetBid(email, listingId, amount);
+            return null;
         }
 
         // POST: api/Bid

@@ -1,6 +1,6 @@
 using System;
 
-namespace INFC20Backend.Areas.HelpPage.ModelDescriptions
+namespace infc20.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Use this attribute to change the name of the <see cref="ModelDescription"/> generated for a type.

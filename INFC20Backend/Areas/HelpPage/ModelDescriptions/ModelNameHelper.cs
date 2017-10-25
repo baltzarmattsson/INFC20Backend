@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace INFC20Backend.Areas.HelpPage.ModelDescriptions
+namespace infc20.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

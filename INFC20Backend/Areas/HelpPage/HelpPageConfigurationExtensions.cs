@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using INFC20Backend.Areas.HelpPage.ModelDescriptions;
-using INFC20Backend.Areas.HelpPage.Models;
+using infc20.Areas.HelpPage.ModelDescriptions;
+using infc20.Areas.HelpPage.Models;
 
-namespace INFC20Backend.Areas.HelpPage
+namespace infc20.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

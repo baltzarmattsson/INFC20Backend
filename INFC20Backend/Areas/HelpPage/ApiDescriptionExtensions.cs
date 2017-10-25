@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace INFC20Backend.Areas.HelpPage
+namespace infc20.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

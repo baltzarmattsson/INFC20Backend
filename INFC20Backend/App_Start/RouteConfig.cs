@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace INFC20Backend
+namespace infc20
 {
     public class RouteConfig
     {
